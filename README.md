@@ -53,4 +53,46 @@ Using this information, we can actually re-implement a front end for Google's ho
 </html>
 ```
 
-When you open this page in a browser.
+When you open this page in a browser, you should see a (very simple) **HTML** form. Type in a search query like "**HARVARD**" and click "Google Search", and you should be taken to Google's search results page!
+
+How did that work? In this case, the `action` attribute on the `form` told the browser that when the form is submitte, the data should be sent to `https://www.google.com/search`. And by adding an `input` field to the form whose `name` attribute was `q`, whatever the user types into that field is included as **GET** parameter in the **URL**.
+
+Your task in this project is to expand on this site, creating your own front-end for Google Serach, as by exploring Google's interface to indentify what **GET** parameters is expectes and adding the necessary HTML and CSS to your website.
+
+## Getting Started
+
+-   Download the distribution code from https://cdn.cs50.net/web/2020/spring/projects/0/search.zip and unzip it. You can skip this step if you manually created the `index.html` file by following the steps outlined in the "Background" section above.
+
+## Specification
+
+Your website must meet the following requirements:
+
+-   Your website should have at least three pages: one for regular Google Search (which must be called `index.html`, one for Google Image Search, and one for Google Advanced Search).
+
+    -   On the Google Image Search page, there should be three links in the upper-right of the page to go to the Image Search or Advance Search. On each of the other two paes, there should be a link in the upper-right to go back to Google Search.
+
+-   On the Google Search page, the user should be able to type in a query, click "Google Search", and be taken to the Google search results for that page.
+
+    -   Like Google's own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
+
+-   On the Google Image Search page, the user should able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+
+-   On the Google Advanced Search page, the user should be able to provide input for the following four fields (take from Google's own [advance search](https://www.google.com/advanced_search) options)
+
+    -   Find pages with... "all these wors:"
+    -   Find pages with... "this exact word or phrase:"
+    -   Find pages with... "any of these words:"
+    -   Find pages with... "none of these words:"
+
+-   Like Google's own Advanced Search page, the four options should be stacked vertically, and all the text fields should be aligned.
+
+    -   Consistent with Google's own CSS, the "Advance Search" button syoud be blue with white text.
+    -   When the "Advance Search" button is clicked, the user should be taken to the search results page for their given query.
+
+-   Add an "I'm Feeling Lucky" button to the main Google Search page. Consistent with Google's own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal result page.
+    -   You may encounter a redirect notice when using the "I'm Feeling Lucky" button. Not to worry! This is an epxected consequence of a security feature implemented by Google.
+-   The CSS you write hsould resemble Google's own aesthetics.
+
+## Hints
+
+-   To determine what the parameter names should be, you're welcome to experinemen
