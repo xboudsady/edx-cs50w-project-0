@@ -95,4 +95,25 @@ Your website must meet the following requirements:
 
 ## Hints
 
--   To determine what the parameter names should be, you're welcome to experinemen
+-   To determine what the parameter names should be, you're welcome to experiment with making Google seraches, and looking at the resulting URL. It may also be helpful to open the "Network" inspector (accessible in Google Chrome by choosing View -> Developer -> Developer Tools) to view details about your requests your browser makes to Google.
+    -   Any `<input>` element (whether it's `type` is `text`, `submit`, `number`, or something else entirely) can have `name` and `value` attributes that will become GET parameters when a form is submitted.
+    -   You may also find it helpful to look at Google's own HTML to answer these questions. In most browser, you can control-click or right-click on a page and choose "View Page Source" to view the page's underlying HTML.
+-   To inclue an input field in a form that users cannot see or modify, you can use the **"hidden"** input field.
+
+## How to Submit
+
+1. Visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you'd like to grant course staff access to your submission, and click **Join course**.
+2. [Install Git](https://git-scm.com/downloads) and, optionally, [insall `submit50`](https://cs50.readthedocs.io/submit50/)
+
+> When you sbmmit your project, the contents of your `web50/projects/2020/x/search` branch should match the file structure of the unzipped distribution code as originally received. That is to say, your files shoudl not be nested inside any other directories of your own creation(`search` or `project50`, for example). Your branch should also not contain any code from any other projects, only this one. Failure to adhere to this file structure will likely results in your submission being rejected.
+
+> By way of example, for this project that means that if the garding staff visits `https://github.com/me50/USERNAME/blob/web50/projects/2020/x/search/index.html` (where `USERNAME` is your own Github username as provided in the form, below) your submission for `index.html` for this project should be what appears. If it doesn't, reorganize your repository as needed to match this paradigm.
+
+3. If you've installed `submit50`, execute
+   `submit50 web50/projects/2020/x/search`
+
+4. [Record a screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) not to exceed 5 minutes in length, in which you demonstrate your project's functionality. **Your URL bar must remain visible throughout your demonstration of the project.** Be certain that every element of the specification, above, is demonstrated in your video. There's no need to show your code in this video, just your application in action; we'll review your code on GitHub. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else. In your video's description, you must timestamp where your video demonstrates each of the seven (7) elements of the specification. **This is not optional**, videos without timestamps in their description will be automatically rejected.
+
+5. Submit [this form](https://forms.cs50.io/c0a13c70-af0c-47ad-a104-bc136c9cc148).
+
+You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your current progress!
